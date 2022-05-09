@@ -1,0 +1,411 @@
+/* Start Variables */
+:root {
+  --main-color: #00b3a4;
+  --secondery-color: #009bca;
+}
+/* End Variables */
+
+/* Start Global Rules */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(
+    to bottom,
+    rgb(0, 33, 44),
+    rgb(0, 51, 66),
+    #c0d6d1,
+    #f6f1d3
+  );
+  color: #2c3e50;
+  overflow-x: hidden;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Start secroller Edit */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+}
+/* End secroller Edit */
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+
+/* Start Asking Cards */
+.container {
+  text-align: center;
+}
+.title h1 {
+  text-align: center;
+  color: Var(--main-color);
+  font-size: 80px;
+  text-shadow: 4px 4px 5px #000;
+  font-family: "Sacramento", cursive;
+}
+.container .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+  padding: 10px 20px;
+  margin: 20px auto;
+  height: 200px;
+  border-radius: 5px;
+  width: fit-content;
+  box-shadow: 5px 5px 10px rgba(51, 51, 51, 0.3);
+  max-width: 340px;
+}
+
+.container p {
+  margin: 0 auto 30px;
+  font-size: 18px;
+  width: 300px;
+}
+.container .box {
+  margin: 20px auto 20px;
+}
+.container .writing-box input:last-child {
+  margin-top: 5px;
+}
+.container input {
+  width: 250px;
+  height: 40px;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid Var(--secondery-color);
+}
+.container input:focus {
+  outline: none;
+}
+.container button {
+  width: 200px;
+  height: 40px;
+  background-color: Var(--main-color);
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.container button:hover {
+  background-color: #00a194;
+}
+.info h3 {
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  color: Var(--main-color);
+  font-size: 30px;
+}
+.info p {
+  line-height: 1.3;
+}
+.info p span {
+  color: Var(--main-color);
+  font-size: 22px;
+}
+#message {
+  margin: 20px auto;
+  width: 400px;
+}
+#result {
+  margin: 20px auto;
+  font-size: 30px;
+  width: 400px;
+}
+/* End Asking Cards */
+
+/* Start cloud */
+.asking-cards .container .background-icon .cloud1,
+.asking-cards .container .background-icon .cloud2,
+.asking-cards .container .background-icon .cloud3,
+.asking-cards .container .background-icon .astronaut2 {
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.asking-cards .container .background-icon .cloud1 {
+  position: absolute;
+  width: 180px;
+  left: 150px;
+  top: 1000px;
+  animation-name: cloud1;
+  animation-duration: 3s;
+  z-index: -2;
+}
+@keyframes cloud1 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(15%);
+  }
+}
+.asking-cards .container .background-icon .cloud2 {
+  position: absolute;
+  width: 90px;
+  left: 72%;
+  top: 900px;
+  z-index: -2;
+  animation-name: cloud2;
+  animation-duration: 3s;
+
+  z-index: -2;
+}
+@keyframes cloud2 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+.asking-cards .container .background-icon .cloud3 {
+  position: absolute;
+  width: 200px;
+  right: 0;
+  top: 1100px;
+  animation-name: cloud3;
+  animation-duration: 5s;
+  z-index: -2;
+}
+@keyframes cloud3 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(10%);
+  }
+}
+.asking-cards .container .background-icon .asteroid1 {
+  position: absolute;
+  left: 10%;
+  top: 50px;
+  width: 30px;
+  animation-name: asteroid1;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: inherit;
+  animation-timing-function: linear;
+  z-index: -2;
+}
+@keyframes asteroid1 {
+  0% {
+    transform: translate(0) rotate(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(1000%, 1000%) rotate(180deg);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(2000%, 2000%) rotate(360deg);
+    opacity: 0.8;
+  }
+}
+.asking-cards .container .background-icon .asteroid2 {
+  position: absolute;
+  right: 18%;
+  top: 280px;
+  width: 30px;
+  animation-name: asteroid2;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: inherit;
+  animation-timing-function: linear;
+  z-index: -2;
+}
+@keyframes asteroid2 {
+  0% {
+    transform: translate(0) rotate(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(500%, 500%) rotate(180deg);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(1000%, 1000%) rotate(360deg);
+    opacity: 0.8;
+  }
+}
+.asking-cards .container .background-icon .moon {
+  position: absolute;
+  right: 9%;
+  top: 180px;
+  width: 50px;
+  opacity: 0.8;
+  animation-name: moon;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  z-index: -2;
+}
+@keyframes moon {
+  0% {
+    transform: translateX(0%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(20%) rotate(360deg);
+  }
+}
+.asking-cards .container .background-icon .mars {
+  position: absolute;
+  left: 25%;
+  top: 50px;
+  width: 30px;
+  opacity: 0.8;
+  animation-name: mars;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  z-index: -2;
+}
+@keyframes mars {
+  0% {
+    transform: translateX(0%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(20%) rotate(360deg);
+  }
+}
+.asking-cards .container .background-icon .startup {
+  position: fixed;
+  right: 10%;
+  bottom: -18px;
+  width: 60px;
+  opacity: 01;
+  transform: rotate(-45deg);
+  transition: 0.2s;
+}
+.asking-cards .container .background-icon .startup:hover {
+  bottom: 0;
+}
+.asking-cards .container .background-icon .astronaut2 {
+  position: absolute;
+  left: 9%;
+  top: 250px;
+  width: 50px;
+  animation-name: astronaut2;
+  animation-duration: 2s;
+  z-index: -2;
+}
+@keyframes astronaut2 {
+  0% {
+    transform: translatey(0%) rotate(2deg);
+  }
+  100% {
+    transform: translatey(20%) rotate(6deg);
+  }
+}
+.asking-cards .container .background-icon .sun,
+.asking-cards .container .background-icon .plane {
+  animation-iteration-count: infinite;
+  /* animation-direction: alternate; */
+  animation-timing-function: linear;
+}
+.asking-cards .container .background-icon .sun {
+  width: 250px;
+  position: absolute;
+  right: -60px;
+  top: 950px;
+  animation-name: sun;
+  animation-duration: 65s;
+  z-index: -5;
+}
+@keyframes sun {
+  0% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.asking-cards .container .background-icon .plane {
+  width: 200px;
+  position: absolute;
+  top: 1250px;
+  left: -200px;
+  animation-name: plane;
+  animation-duration: 50s;
+  z-index: -5;
+}
+@keyframes plane {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(800%);
+  }
+}
+.asking-cards .container .background-icon .star1,
+.asking-cards .container .background-icon .star2,
+.asking-cards .container .background-icon .star3,
+.asking-cards .container .background-icon .star4,
+.asking-cards .container .background-icon .star5,
+.asking-cards .container .background-icon .star6,
+.asking-cards .container .background-icon .star7 {
+  width: 5px;
+  position: absolute;
+  z-index: -10;
+}
+.asking-cards .container .background-icon .star1 {
+  left: 33%;
+  top: 20%;
+}
+.asking-cards .container .background-icon .star2 {
+  right: 23%;
+  top: 14%;
+}
+.star3 {
+  right: 33%;
+  top: 55%;
+}
+.asking-cards .container .background-icon .star4 {
+  right: 10%;
+  top: 70%;
+}
+.asking-cards .container .background-icon .star5 {
+  left: 5%;
+  top: 66%;
+}
+.asking-cards .container .background-icon .star6 {
+  left: 16%;
+  top: 33%;
+}
+.asking-cards .container .background-icon .star7 {
+  left: 30%;
+  top: 50%;
+}
+/* End cloud */

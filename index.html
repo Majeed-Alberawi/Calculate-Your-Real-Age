@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculate Your Real Age</title>
+  <!-- Style Link -->
+  <link rel="stylesheet" href="css/master.css">
+  <!-- Awesome Link -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- Normalize Link -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- Google Font Link -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Start Asking Cards -->
+  <div class="asking-cards">
+    <div class="container">
+    <div class="title">
+    <h1>Calculate Your Real Age</h1>
+    </div>
+    <div class="background-icon">
+    <img src="./images/cloud1.png" alt="" class="cloud1">
+    <img src="./images/cloud2.png" alt="" class="cloud2">
+    <img src="./images/cloud3.png" alt="" class="cloud3">
+    <img src="./images/asteroid (1).png" alt="" class="asteroid1">
+    <img src="./images/asteroid (2).png" alt="" class="asteroid2">
+    <img src="./images/moon.png" alt="" class="moon">
+    <img src="./images/mars.png" alt="" class="mars">
+    <a href="#"><img src="./images/startup.png" alt="" class="startup"></a>
+    <img src="./images/astronaut (2).png" alt="" class="astronaut2">
+    <img src="./images/sun.png" alt="" class="sun"> 
+    <img src="./images/plane.png" alt="" class="plane"> 
+    <img src="./images/star.png" alt="" class="star1">
+    <img src="./images/star.png" alt="" class="star2">
+    <img src="./images/star.png" alt="" class="star3">
+    <img src="./images/star.png" alt="" class="star4">
+    <img src="./images/star.png" alt="" class="star5">
+    <img src="./images/star.png" alt="" class="star6">
+    <img src="./images/star.png" alt="" class="star7">
+    </div>
+    <!-- Age -->
+  <div class="card">
+    <div class="box">
+      <div class="ask">
+        <p>Write your Age Here </p>
+      </div>
+      <div class="writing-box">
+        <input type="text" id="ageInput" placeholder="Age">
+      </div>
+    </div>
+  </div>
+  <!-- Sleep -->
+  <div class="card">
+    <div class="box">
+      <div class="ask">
+        <p>How Many Time You Sleep In Each Day?</p>
+      </div>
+      <div class="writing-box">
+        <input type="text" id="sleepTime" placeholder="Sleeping Time">
+      </div>
+    </div>
+  </div>
+  <!-- Studying -->
+  <div class="card">
+    <div class="box">
+      <div class="ask">
+        <p>How Many Time You Study In each day?</p>
+      </div>
+      <div class="writing-box">
+      <input type="text" id="studingTime" placeholder="Studing Time">
+      </div>
+    </div>
+  </div>
+  <!-- BathRoom -->
+  <div class="card">
+    <div class="box">
+      <div class="ask">
+        <p>How many Time You Spend In The BathRoom?</p>
+      </div>
+      <div class="writing-box">
+        <input type="text" id="bathTime" placeholder="Bath Time In Minute"> <!--لا يقل عن 15 دقيقه-->
+        <input type="text" id="howManyBath" placeholder="How Many Time You Enter"> <!--لا يقل عن 15 دقيقه-->
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="box">
+      <div class="ask">
+        <p>How many Time You Spend To Shower?</p>
+      </div>
+      <div class="writing-box">
+        <input type="text" id="showerTime" placeholder="Shower Time In Minute"> <!--لا يقل عن 15 دقيقه-->
+      </div>
+    </div>
+  </div>
+  <!-- Working -->
+  <div id="working">
+  <!-- Years Of Working -->
+  <div class="card">
+    <div class="box">
+      <div class="ask">
+        <p>How Many Years Did You Worked?</p>
+      </div>
+      <div class="writing-box">
+        <input type="text" id="workingYear" placeholder="Years Of Working">
+      </div>
+    </div>
+  </div>
+  <!-- Working Time -->
+  <div class="card">
+    <div class="box">
+      <div class="ask">
+    <p>How Many Time You Spend In Work?</p>
+  </div>
+      <div class="writing-box">
+        <input type="text" id="workingTime" placeholder="Working Time">
+      </div>
+    </div>
+  </div>
+  <!-- Working Days -->
+  <div class="card">
+    <div class="box">
+      <div class="ask">
+        <p>How Many Day In Week Do You Work?</p>
+      </div>
+      <div class="writing-box">
+        <input type="text" id="howManyDay" placeholder="Working Days">
+      </div>
+    </div>
+  </div>
+  <button onclick="calcAge()">Calculate</button>
+  <div id="message"></div>
+  <div id="result"></div>
+  </div>
+  <div class="info">
+    <h3>Do You Know</h3>
+    <p> <span>"</span> We Spend About 5 Years And 4 Month In First 10 Years From Our Life In Sleeping <span>"</span></p>
+  </div>
+</div>
+<!-- End Asking Cards-->
+  <script src="main.js"></script>
+</body>
+</html>
