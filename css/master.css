@@ -330,29 +330,50 @@ body {
 .asking-cards .container .background-icon .star1 {
   left: 33%;
   top: 20%;
+  animation: starts 1s infinite alternate;
 }
 .asking-cards .container .background-icon .star2 {
   right: 23%;
   top: 14%;
+  animation: starts 1s infinite alternate 1.7s;
+
 }
 .star3 {
   right: 33%;
   top: 55%;
+  animation: starts 1s infinite alternate 2.3s;
+
 }
 .asking-cards .container .background-icon .star4 {
   right: 10%;
   top: 70%;
+  animation: starts 1s infinite alternate 3.8s;
+
 }
 .asking-cards .container .background-icon .star5 {
   left: 5%;
   top: 66%;
+  animation: starts 1s infinite alternate 6.4s ;
+
 }
 .asking-cards .container .background-icon .star6 {
   left: 16%;
   top: 33%;
+  animation: starts 1s infinite alternate 4.6s;
+
 }
 .asking-cards .container .background-icon .star7 {
   left: 30%;
   top: 50%;
+  animation: starts 1s infinite alternate 1.2s;
+
+}
+@keyframes starts {
+  0% {
+    transform: scale(0.5);
+  } 
+  100% {
+    transform: scale(1);
+  }
 }
 /* End cloud */
