@@ -24,14 +24,13 @@ body {
     #f6f1d3
   );
   color: #2c3e50;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 .container {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  overflow: hidden;
 }
 /* Start secroller Edit */
 ::-webkit-scrollbar {
@@ -192,23 +191,6 @@ body {
     transform: scale(1.1);
   }
 }
-.asking-cards .container .background-icon .cloud3 {
-  position: absolute;
-  width: 200px;
-  right: 0;
-  top: 1100px;
-  animation-name: cloud3;
-  animation-duration: 5s;
-  z-index: -2;
-}
-@keyframes cloud3 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(10%);
-  }
-}
 .asking-cards .container .background-icon .asteroid1 {
   position: absolute;
   left: 10%;
@@ -232,32 +214,6 @@ body {
   }
   100% {
     transform: translate(2000%, 2000%) rotate(360deg);
-    opacity: 0.8;
-  }
-}
-.asking-cards .container .background-icon .asteroid2 {
-  position: absolute;
-  right: 18%;
-  top: 280px;
-  width: 30px;
-  animation-name: asteroid2;
-  animation-duration: 6s;
-  animation-iteration-count: infinite;
-  animation-direction: inherit;
-  animation-timing-function: linear;
-  z-index: -2;
-}
-@keyframes asteroid2 {
-  0% {
-    transform: translate(0) rotate(0);
-    opacity: 0;
-  }
-  50% {
-    transform: translate(500%, 500%) rotate(180deg);
-    opacity: 0.5;
-  }
-  100% {
-    transform: translate(1000%, 1000%) rotate(360deg);
     opacity: 0.8;
   }
 }
@@ -330,20 +286,10 @@ body {
     transform: translatey(20%) rotate(6deg);
   }
 }
-.asking-cards .container .background-icon .sun,
 .asking-cards .container .background-icon .plane {
   animation-iteration-count: infinite;
   /* animation-direction: alternate; */
   animation-timing-function: linear;
-}
-.asking-cards .container .background-icon .sun {
-  width: 250px;
-  position: absolute;
-  right: -60px;
-  top: 950px;
-  animation-name: sun;
-  animation-duration: 65s;
-  z-index: -5;
 }
 @keyframes sun {
   0% {
@@ -378,7 +324,7 @@ body {
 .asking-cards .container .background-icon .star6,
 .asking-cards .container .background-icon .star7 {
   width: 5px;
-  position: absolute;
+  position: absolute !important;
   z-index: -10;
 }
 .asking-cards .container .background-icon .star1 {
